@@ -4,6 +4,9 @@ key = ${STUNNEL_KEY}
 setuid = stunnel
 setgid = stunnel
 
+socket = l:TCP_NODELAY=1
+socket = r:TCP_NODELAY=1
+
 pid = /var/run/stunnel/stunnel.pid
 
 CAfile = ${STUNNEL_CAFILE}
