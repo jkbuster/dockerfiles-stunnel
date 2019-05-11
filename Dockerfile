@@ -4,7 +4,7 @@ RUN set -x \
  && useradd -r stunnel \
  && dnf install -y \
         stunnel \
- && cp -v /usr/bin/envsubst /usr/local/bin/
+        gettext
 COPY *.template openssl.cnf /srv/stunnel/
 COPY stunnel.sh /srv/
 
